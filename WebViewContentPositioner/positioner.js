@@ -1,4 +1,4 @@
-const WebViewContentPositioner = WebViewContentPositioner || {};
+window.WebViewContentPositioner = window.WebViewContentPositioner || {};
 
 (function($){
 

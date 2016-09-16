@@ -51,8 +51,8 @@ private extension ViewController {
   }
   
   func _setupToolbarItems() {
-    let savePositionItem = UIBarButtonItem(title: "Save Position", style: .Plain, target: self, action: "saveCurrentPosition:")
-    let restorePositionItem = UIBarButtonItem(title: "Restore Position", style: .Plain, target: self, action: "restorePosition:")
+    let savePositionItem = UIBarButtonItem(title: "Save Position", style: .Plain, target: self, action: #selector(ViewController.saveCurrentPosition(_:)))
+    let restorePositionItem = UIBarButtonItem(title: "Restore Position", style: .Plain, target: self, action: #selector(ViewController.restorePosition(_:)))
     let flexItem = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
     toolbarItems = [savePositionItem, flexItem, restorePositionItem]
     toolbarItems?.forEach { $0.enabled = false }
